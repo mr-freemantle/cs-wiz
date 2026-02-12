@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards | CS-WIZ</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/flashcards.js"></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo"><a href="./index.html">CS-WIZ</a></div>
+      <nav>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="topic-practice.html">Topic Practice</a>
+        <a href="flashcards.html">Flashcards</a>
+      </nav>
+    </header>
+
+    <main class="container flashcards-page">
+      <h2>Flashcards</h2>
+
+      <select id="deck-select"></select>
+
+      <div class="card-container">
+        <div class="card" id="card">
+          <div class="card-inner">
+            <div class="card-front" id="question"></div>
+            <div class="card-back" id="answer"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="prev">Previous</button>
+        <button id="flip">Flip</button>
+        <button id="next">Next</button>
+      </div>
+    </main>
+  </body>
+</html>
