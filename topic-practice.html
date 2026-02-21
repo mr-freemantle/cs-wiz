@@ -20,52 +20,92 @@
     <main class="container">
       <h2>Topic Practice</h2>
 
+      <label for="componentDropdown">Choose Component:</label>
+      <select id="componentDropdown">
+        <option value="all">All Components</option>
+        <option value="1">Component 1</option>
+        <option value="2">Component 2</option>
+      </select>
+
       <div class="topics-grid">
-        <div class="topic-card">
-          <h3>Input, output and storage</h3>
-          <p>
-            I/O devices, secondary storage types (magnetic, optical, solid
-            state), RAM, ROM, virtual and cloud storage.
-          </p>
-
+        <div class="topic-card" data-component="1">
+          <h3>Architecture of the CPU</h3>
           <a
-            href="topics/input-output-storage.pdf"
+            href="topics/comp 1/Architecture_of_the_CPU.pdf"
             download
             class="btn-secondary"
           >
             Download Questions and Mark Scheme
           </a>
         </div>
-
-        <div class="topic-card">
-          <h3>Types of processor</h3>
-          <p>
-            CISC and RISC characteristics, GPUs, parallel systems (SISD, SIMD,
-            MISD, MIMD).
-          </p>
-
+        <div class="topic-card" data-component="1">
+          <h3>CPU performance</h3>
           <a
-            href="topics/types-of-processor.pdf"
+            href="topics/comp 1/CPU_performance.pdf"
             download
             class="btn-secondary"
           >
             Download Questions and Mark Scheme
           </a>
         </div>
-
-        <div class="topic-card">
-          <h3>Systems software</h3>
-          <p>
-            Operating systems, memory management (paging, segmentation, virtual
-            memory), interrupts, scheduling, BIOS, device drivers, virtual
-            machines.
-          </p>
-
-          <a href="topics/systems-software.pdf" download class="btn-secondary">
+        <div class="topic-card" data-component="1">
+          <h3>Embedded system</h3>
+          <a
+            href="topics/comp 1/Embedded_system.pdf"
+            download
+            class="btn-secondary"
+          >
+            Download Questions and Mark Scheme
+          </a>
+        </div>
+        <div class="topic-card" data-component="1">
+          <h3>Primary storage memory</h3>
+          <a
+            href="topics/comp 1/Primary_storage_memory.pdf"
+            download
+            class="btn-secondary"
+          >
+            Download Questions and Mark Scheme
+          </a>
+        </div>
+        <div class="topic-card" data-component="1">
+          <h3>Secondary storage</h3>
+          <a
+            href="topics/comp 1/Secondary_storage.pdf"
+            download
+            class="btn-secondary"
+          >
+            Download Questions and Mark Scheme
+          </a>
+        </div>
+        <div class="topic-card" data-component="2">
+          <h3>Additional programming techniques</h3>
+          <a
+            href="topics/comp 2/Additional_programming_techniques.pdf"
+            download
+            class="btn-secondary"
+          >
+            Download Questions and Mark Scheme
+          </a>
+        </div>
+        <div class="topic-card" data-component="2">
+          <h3>Data types</h3>
+          <a href="topics/comp 2/Data_types.pdf" download class="btn-secondary">
+            Download Questions and Mark Scheme
+          </a>
+        </div>
+        <div class="topic-card" data-component="2">
+          <h3>Programming fundamentals</h3>
+          <a
+            href="topics/comp 2/Programming_fundamentals.pdf"
+            download
+            class="btn-secondary"
+          >
             Download Questions and Mark Scheme
           </a>
         </div>
       </div>
     </main>
+    <script src="js/topic-practice.js"></script>
   </body>
 </html>
